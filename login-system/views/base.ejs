@@ -1,0 +1,29 @@
+<%-include('header')-%>
+<div class="text-center center-div" id="login">
+    <div class="container w-25 border border-danger py-5 HABIB">
+        <div class="title pb-5">
+            <h2 class = "font-weight-bold">Login system</h2>
+            <span>Log in for the existing user</span>
+           <%if(locals.logout){%>
+        <div class="alter alert-success text-center">
+        <%=logout%>  
+        </div>
+        <%}%>
+        <form action="/route/login" method="post">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label tect-end">Email address</label>
+              <input name="email" type="email"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              <div class="text-center">Register email address</div>
+            </div>
+            <button name="submit"  type="submit" class="btn btn-primary">Submit</button>
+          </form> 
+    </div>
+</div>
+<%-include('footer')-%>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>

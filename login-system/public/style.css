@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+ font-family: 'Open Sans',sans-serif;
+ background-image: url('./assets/jeremy-bishop-8xznAGy4HcY-unsplash.jpg');
+ background-size: cover;   
+ background-repeat: no-repeat;
+}
+.center-div{
+    padding-top: 5%;
+    
+}
+#login.title>span{
+    font-size: 8em;
+}
+.HABIB{
+    background-color: white;
+}
+.box1{
+    background: white;
+}
